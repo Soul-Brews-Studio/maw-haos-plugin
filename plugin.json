@@ -1,0 +1,17 @@
+{
+  "name": "haos",
+  "version": "0.1.0",
+  "entry": "./src/index.ts",
+  "sdk": "^1.0.0",
+  "target": "js",
+  "description": "Read-only Home Assistant OS view: core / supervisor / os versions and updates, host info, add-ons, add-on logs, backups, and entity states. Named profiles for several instances.",
+  "cli": {
+    "command": "haos",
+    "help": "maw haos [status|addons|addon <slug> [--lines N]|backups|entities [domain] [--search TEXT]|config|logout] [--profile NAME] [--json] [--insecure] [--debug]"
+  },
+  "capabilities": ["net:fetch", "net:websocket", "proc:exec"],
+  "weight": 0,
+  "tier": "extra",
+  "license": "MIT",
+  "schemaVersion": 1
+}
